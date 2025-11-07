@@ -38,11 +38,14 @@ bash <(curl -fsSL https://github.com/flower-wins/fws/blob/main/fws.sh)
 
 bash
 复制代码
+```bash
 wget -O fws.sh https://github.com/flower-wins/fws/blob/main/fws.sh && chmod +x fws.sh && ./fws.sh
+```
 🧭 使用菜单
 运行后进入交互菜单：
 
-markdown
+```markdown
+
 复制代码
 ==========================
      FWS 多功能工具箱
@@ -59,6 +62,7 @@ markdown
 0. 退出
 ==========================
 请输入选项编号：
+```
 🌐 自动反代与 Cloudflare 域名绑定
 FWS.SH 支持自动反代和证书生成。
 
@@ -94,8 +98,7 @@ Token 自动启用
 脚本会随机生成强随机 token（例如 Frp_23fjQkzPsd8!）
 并生成一个 frpc.ini 示例文件：
 
-ini
-复制代码
+```ini
 [common]
 server_addr = your.vps.ip
 server_port = 7000
@@ -106,6 +109,7 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 8080
 remote_port = 8080
+```
 📁 文件路径结构
 路径	说明
 /root/fws.sh	主脚本
@@ -118,8 +122,7 @@ remote_port = 8080
 🧰 服务管理命令
 以下命令在菜单中自动调用，也可手动执行：
 
-bash
-复制代码
+```bash
 # 启动服务
 systemctl start frps
 systemctl start ttyd
@@ -129,6 +132,7 @@ systemctl status gost
 
 # 设置开机自启
 systemctl enable 3x-ui
+```
 💡 常见问题
 Q1: 域名没反代成功？
 👉 确认域名已解析到服务器 IP，并关闭 Cloudflare 橙色云（DNS Only）模式。
@@ -151,9 +155,10 @@ GitHub：https://github.com/flower-wins/fws
 使用本脚本即表示你同意自行承担因使用脚本带来的任何风险。
 
 💬 欢迎反馈与改进建议！
-bash
-复制代码
+
+```bash
 bash <(curl -fsSL https://github.com/flower-wins/fws/blob/main/fws.sh)
+```
 🌟 让 Linux 管理更轻松，让服务部署更简单。
 
 yaml
