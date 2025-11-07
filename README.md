@@ -32,8 +32,8 @@ FWS.SH 是一个集成多种常用服务的 Linux 自动化安装与管理脚本
 
 ## ⚙️ 一键安装
 
-```bash
-bash <(curl -fsSL https://fws.x10.mx/fws.sh)
+
+bash <(curl -fsSL https://github.com/flower-wins/fws/blob/main/fws.sh)
 或手动下载运行：
 
 bash
