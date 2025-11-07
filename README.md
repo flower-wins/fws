@@ -38,7 +38,7 @@ bash <(curl -fsSL https://fws.x10.mx/fws.sh)
 
 bash
 复制代码
-wget -O fws.sh https://fws.x10.mx/fws.sh && chmod +x fws.sh && ./fws.sh
+wget -O fws.sh https://github.com/flower-wins/fws/blob/main/fws.sh && chmod +x fws.sh && ./fws.sh
 🧭 使用菜单
 运行后进入交互菜单：
 
@@ -66,15 +66,15 @@ FWS.SH 支持自动反代和证书生成。
 假设你在 Cloudflare 上有一个域名：
 
 复制代码
-fws.x10.mx
+x10.mx
 脚本会根据服务创建子域名并反代：
 
 服务	反代子域名	端口	示例
-ttyd	ttyd.fws.x10.mx	7681	https://ttyd.fws.x10.mx
-gost	gost.fws.x10.mx	8081	https://gost.fws.x10.mx
-frps	frps.fws.x10.mx	7500	https://frps.fws.x10.mx
-3x-ui	panel.fws.x10.mx	2053	https://panel.fws.x10.mx
-阅后即焚	burn.fws.x10.mx	8080	https://burn.fws.x10.mx
+ttyd	ttyd.x10.mx	7681	https://ttyd.x10.mx
+gost	gost.x10.mx	8081	https://gost.x10.mx
+frps	frps.x10.mx	7500	https://frps.x10.mx
+3x-ui	panel.x10.mx	2053	https://panel.x10.mx
+阅后即焚	burn.x10.mx	8080	https://burn.x10.mx
 
 🔐 SSL 证书自动签发
 支持以下证书方案：
@@ -142,9 +142,9 @@ Q3: 想卸载？
 🧑‍💻 作者信息
 脚本作者：FlowerWins
 
-GitHub：https://github.com/flower-wins
+GitHub：https://github.com/flower-wins/fws
 
-项目主页：https://fws.x10.mx
+项目主页：
 
 📜 许可证
 本项目遵循 MIT License。
@@ -153,7 +153,7 @@ GitHub：https://github.com/flower-wins
 💬 欢迎反馈与改进建议！
 bash
 复制代码
-bash <(curl -fsSL https://fws.x10.mx/fws.sh)
+bash <(curl -fsSL https://github.com/flower-wins/fws/blob/main/fws.sh)
 🌟 让 Linux 管理更轻松，让服务部署更简单。
 
 yaml
